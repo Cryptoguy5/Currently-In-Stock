@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currently In Stock</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: bisque;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .main {
+            height: 90%;
+            width: 90%;
+            background-color: white;
+        }
+
+        .section {
+            height: 100%;
+            width: 50%;
+        }
+
+        .section2 {
+            height: 50%;
+            width: 100%;
+            text-align: center;
+        }
+
+        img {
+            height: 90%;
+            width: 90%;
+        }
+
+        .part {
+            height: 20%;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .part2 {
+            height: 40%;
+            width: 100%;
+            border: 2px solid grey;
+            box-sizing: border-box;
+            padding: 3%;
+        }
+
+    
+
+        .nomargin {
+            margin: 0;
+        }
+
+        input {
+            height: 80%;
+            width: 60%;
+        }
+
+        button {
+            background-color: black;
+            color: white;
+            height: 80%;
+            width: 30%;
+
+        }
+
+        .fullhight {
+            height: 100%;
+        }
+
+        input::placeholder {
+            text-align: center;
+            font-size: 18px;
+        }
+
+        @media(max-width: 680px) {
+
+             body {
+                height: 100%;
+             }
+
+            .main {
+                flex-direction: column;
+                height: 100%;
+            }
+
+            .section {
+                width: 100%;
+                height: 50%;
+            }
+        }
+        </style>
+</head>
+<body class="center">
+    <div class="main center">
+       <div class="section center">
+            <img src="./purepng.com-black-t-shirtclothingblack-t-shirtfashion-dress-shirt-black-cloth-tshirt-631522326884bzr0p.png.crdownload" alt="t-shirt"/>
+       </div>
+       <div class="section">
+           <div class="part">
+              <div class="section2">
+                  <h1 class="nomargin">ESC Black T-Shirt</h1>
+              </div>
+              <div class="section2">
+                 <p class="nomargin">$25.99 $21.99</p>
+              </div>
+           </div>
+           <div class="part2">
+              <p style="text-align: center;">Notify Me When This Product Has Shipped</p>
+              <p class="nomargin" style="margin-bottom: 2%;">Enter your email or phone number below to be notified <br/> about the progress of this product's delivery.</p>
+              <div class="part">
+                <input class="nomargin" type="text" placeholder="phone number">
+                <button class="nomargin">Text Me</button>
+              </div>
+              <div class="part">
+                <input class="nomargin" type="text" placeholder="Email Address">
+                <button class="nomargin">Email Me</button>
+              </div>
+           </div>
+           <div class="part">
+               <label>Size</label>
+               <div class="part">
+               <input class="fullhight" type="text" placeholder="M">
+               <button style="background-color: grey;" class="fullhight">Available</button>
+             </div>
+           </div>
+           <div class="part">
+                <h2 class="nomargin">Details about this product:</h2>
+                <ul>
+                    <li>Crew Neck</li>
+                    <li>Short Sleeve</li>
+                    <li>100% Cotton</li>
+                    <li>Machine Washable</li>
+                </ul>
+           </div>
+       </div>
+    </div>
+</body>
+</html>
